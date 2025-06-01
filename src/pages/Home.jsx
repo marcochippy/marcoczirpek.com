@@ -1,12 +1,12 @@
 import React from "react";
 import Hero from "../components/Hero";
-import ProjectGalerie from "../components/ProjectGalerie";
+import ProjectGallery from "../components/ProjectGallery";
 
 function Home() {
   return (
     <div>
       <Hero />
-      <ProjectGalerie />
+      <ProjectGallery />
     </div>
   );
 }
