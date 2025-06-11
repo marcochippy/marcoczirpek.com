@@ -1,10 +1,16 @@
 import { lazy, Suspense } from "react";
+import FirstStart from "./items/FirstStart.jsx";
 
 export default function GalleryDetails({ project }) {
-  if (!project) return <div>Wähle ein Projekt aus</div>;
+  if (!project)
+    return (
+      <div>
+        <FirstStart />
+      </div>
+    );
 
   const ProjectComponent = lazy(() =>
-    import(`./items/${project.componentName}`)
+    import(/* @vite-ignore */ `./items/${project.componentName}`)
   );
 
   return (
