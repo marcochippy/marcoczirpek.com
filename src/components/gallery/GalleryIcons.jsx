@@ -1,13 +1,24 @@
 import { motion } from "framer-motion";
 
-function GalleryIcons({ projects, setActiveProject }) {
+function GalleryIcons({ projects, activeProject, setActiveProject }) {
   return (
     <div className="mx-auto">
       {projects.map((project) => (
         <motion.button
-          className={`${project.bgColor} w-min-[40px] h-min-[40px] drop-shadow-md mx-2 my-2 rounded-xl cursor-pointer`}
+          className={`${project.bgColor} w-min-[40px] h-min-[40px] mx-3 my-2 rounded-xl cursor-pointer`}
+          style={{
+            filter:
+              activeProject?.id === project.id
+                ? "drop-shadow(0 7px 7px rgb(0 0 0 / 0.25))"
+                : "drop-shadow(0 3px 3px rgb(0 0 0 / 0.12))",
+          }}
+          animate={{
+            scale: activeProject?.id === project.id ? 1.05 : 1,
+            opacity: activeProject?.id === project.id ? 1 : 0.5,
+          }}
           whileHover={{
-            scale: 1.1,
+            scale: activeProject?.id === project.id ? 1.05 : 1.025,
+            opacity: 1,
             filter: "drop-shadow(0 7px 7px rgb(0 0 0 / 0.25))",
           }}
           transition={{

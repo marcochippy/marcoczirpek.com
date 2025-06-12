@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div
       className={`flex items-center justify-center w-full z-1 py-3 duration-400 fixed ${
-        isScrolled ? "backdrop-blur-sm" : "bg-transparent"
+        isScrolled ? "backdrop-blur-sm bg-black/10" : "bg-transparent"
       } `}>
       <div className="flex items-center justify-between w-[1500px] mx-10">
         <nav>MARCO CZIRPEK</nav>

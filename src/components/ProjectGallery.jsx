@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Marco from "../assets/Marco.jpg";
 import GalleryIcons from "./gallery/GalleryIcons";
 import GalleryDetails from "./gallery/GalleryDetails";
 
@@ -13,7 +12,25 @@ const projects = [
   {
     id: 2,
     icon: "/bankingclub_gmbh_logo.webp",
-    bgColor: "bg-red-300",
+    bgColor: "bg-white",
+    componentName: "ProjectB",
+  },
+  {
+    id: 3,
+    icon: "/bankingclub_gmbh_logo.webp",
+    bgColor: "bg-white",
+    componentName: "ProjectB",
+  },
+  {
+    id: 4,
+    icon: "/bankingclub_gmbh_logo.webp",
+    bgColor: "bg-white",
+    componentName: "ProjectB",
+  },
+  {
+    id: 5,
+    icon: "/bankingclub_gmbh_logo.webp",
+    bgColor: "bg-white",
     componentName: "ProjectB",
   },
 ];
@@ -23,7 +40,11 @@ function ProjectGalerie() {
   return (
     <div className="border-t">
       <div className="flex justify-between">
-        <GalleryIcons projects={projects} setActiveProject={setActiveProject} />
+        <GalleryIcons
+          projects={projects}
+          activeProject={activeProject}
+          setActiveProject={setActiveProject}
+        />
       </div>
       <div className="mx-auto max-w-[1500px]">
         <GalleryDetails project={activeProject} />
