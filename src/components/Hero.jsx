@@ -30,9 +30,9 @@ function Hero() {
           animate={{ filter: "blur(0px)" }}
           transition={{ duration: 0.75 }}
           className="w-full lg:w-1/2 mt-8 lg:mt-0 px-4 lg:px-8">
-          <div className="text-3xl sm:text-4xl md:text-5xl font-bold pb-2">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold pb-2">
             Marco Czirpek
-          </div>
+          </h1>
           <div className="text-xl md:text-xl lg:text-2xl font-light pb-5 pr-20">
             Web developer with Bachelor of Arts and a passion for digital
             realization. I combine creative finesse with technical understanding

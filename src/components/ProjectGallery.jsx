@@ -7,31 +7,31 @@ const projects = [
     id: 1,
     icon: "/ze-feder.svg",
     bgColor: "bg-white",
-    componentName: "ProjectA",
+    componentName: "ZE",
   },
   {
     id: 2,
     icon: "/bankingclub_gmbh_logo.webp",
     bgColor: "bg-white",
-    componentName: "ProjectB",
+    componentName: "BC",
   },
   {
     id: 3,
     icon: "/bankingclub_gmbh_logo.webp",
     bgColor: "bg-white",
-    componentName: "ProjectB",
+    componentName: "BC",
   },
   {
     id: 4,
     icon: "/bankingclub_gmbh_logo.webp",
     bgColor: "bg-white",
-    componentName: "ProjectB",
+    componentName: "BC",
   },
   {
     id: 5,
     icon: "/bankingclub_gmbh_logo.webp",
     bgColor: "bg-white",
-    componentName: "ProjectB",
+    componentName: "BC",
   },
 ];
 function ProjectGalerie() {
@@ -39,6 +39,9 @@ function ProjectGalerie() {
 
   return (
     <div className="border-t">
+      <h2 className="text-3xl text-center sm:text-3xl md:text-3xl font-bold pb-2 ">
+        Work Portfolio
+      </h2>
       <div className="flex justify-between">
         <GalleryIcons
           projects={projects}
