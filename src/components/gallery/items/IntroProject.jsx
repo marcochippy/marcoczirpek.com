@@ -10,7 +10,6 @@ function IntroProject({ details }) {
   return (
     <>
       <div className="flex">
-        <img src={details.opener} alt="" className="h-100" />
         <div>
           <p>{details.subHead}</p>
           <h3 className="text-4xl font-bold">{details.headline}</h3>
