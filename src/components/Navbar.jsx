@@ -1,21 +1,27 @@
-import React from "react";
-import { useScroll } from "../utils/useScroll";
+import React from 'react';
+import { useScroll } from '../utils/useScroll';
+import { div } from 'motion/react-client';
 
 function Navbar() {
   const isScrolled = useScroll();
 
+  const isScrolledBlur = `mx-1 py-2 px-4 transition-all rounded-full duration-400 ${
+    isScrolled ? 'backdrop-blur-md bg-white/15 ring-1 ring-black/10' : 'bg-transparent'
+  }`;
+
   return (
-    <div
-      className={`flex items-center justify-center w-full z-1 py-3 duration-400 fixed ${
-        isScrolled ? "backdrop-blur-sm bg-black/10" : "bg-transparent"
-      } `}>
-      <div className="flex items-center justify-between w-[1500px] mx-10">
-        <nav>MARCO CZIRPEK</nav>
-        <nav className="flex justify-between">
-          <div className="btn mx-4">About me</div>
-          <div className="btn mx-4">Portfolio</div>
-          <div className="btn ml-4">STUFF</div>
-        </nav>
+    <div className="fixed top-5 left-0 right-0 z-50 flex justify-center px-4 md:px-8">
+      <div className="w-full max-w-[90rem] flex justify-end">
+        <div
+          className={`flex py-2 px-1 rounded-full transition-all duration-400 ${
+            isScrolled ? 'backdrop-blur-md bg-white/5 ring-1 ring-black/10' : 'bg-transparent'
+          } `}>
+          <nav className="flex">
+            <div className={`${isScrolledBlur}`}>About me</div>
+            <div className={`${isScrolledBlur}`}>Portfolio</div>
+            <div className={`${isScrolledBlur}`}>STUFF</div>
+          </nav>
+        </div>
       </div>
     </div>
   );

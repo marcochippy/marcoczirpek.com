@@ -1,48 +1,52 @@
-import Marco from "../assets/Marco.jpg";
-import { motion } from "framer-motion";
-import { GithubBtn, LinkedInBtn } from "./Btns";
+import Marco from '../assets/Marco.jpg';
+import { motion } from 'framer-motion';
+import { GithubBtn, LinkedInBtn } from './Btns';
 
 function Hero() {
+  const dragValues = {
+    whileHover: { scale: 1 },
+    whileTap: { scale: 0.95 },
+    whileDrag: { scale: 0.98 },
+    drag: true,
+    dragConstraints: { top: -50, bottom: 50, left: -50, right: 50 },
+  };
+
   return (
-    <div className="pt-[20%] md:pt-40 pb-20">
-      <motion.section
-        initial={{ filter: "blur(3px)", opacity: 0, y: 30 }}
-        animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
-        transition={{ duration: 0.75 }}
-        className="flex flex-col lg:flex-row items-center justify-between w-full max-w-[90rem] mx-auto px-4 md:px-8">
-        <div className="w-[75%] lg:w-[50%] xl:w-[450px] relative">
+    <div className="min-h-[90vh] flex items-center justify-center relative px-4 md:px-8 ">
+      <motion.section className="flex lg:flex-row items-center justify-center h-full w-full max-w-[90rem] relative">
+        <motion.a
+          {...dragValues}
+          className="w-[75%] lg:w-[50%] xl:w-[450px] flex justify-center lg:justify-start hover:cursor-pointer">
           <motion.img
-            initial={{ opacity: 0, y: 0 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 4 }}
-            className=" w-full max-w-[450px] z-[-2] absolute blur-3xl opacity-100"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 6 }}
+            className=" w-full max-w-[450px] z-[-2] rounded-full absolute blur-3xl lg:ml-[10px] lg:mt-[-100px]"
             src={Marco}
             alt="Picture of Marco Czirpek"
+            draggable={false}
           />
           <img
-            className="w-full max-w-[450px] z-[-1] rounded-3xl"
+            className="relative lg:mt-[-100px] lg:ml-[10px]  w-full max-w-[450px] z-[0] rounded-full"
             src={Marco}
             alt="Picture of Marco Czirpek"
+            draggable={false}
           />
-        </div>
-        <motion.div
-          initial={{ filter: "blur(3px)" }}
-          animate={{ filter: "blur(0px)" }}
-          transition={{ duration: 0.75 }}
-          className="w-full lg:w-1/2 mt-8 lg:mt-0 px-4 lg:px-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold pb-2">
-            Marco Czirpek
-          </h1>
-          <div className="text-xl md:text-xl lg:text-2xl font-light pb-5 pr-20">
-            Web developer with Bachelor of Arts and a passion for digital
-            realization. I combine creative finesse with technical understanding
-            – for functional, aesthetic solutions in the digital space.
+        </motion.a>
+        <motion.a
+          {...dragValues}
+          className="relative hover:cursor-pointer lg:ml-[-100px] lg:mt-[150px] w-full max-w-[600px] mt-8 px-4 lg:px-8 lg:py-7 rounded-xl z-1 backdrop-blur-md bg-white/55 ring-1 ring-black/5">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold pb-2">Hi, I'm Marco Czirpek</h1>
+          <div className="text-xl md:text-xl lg:text-2xl font-light pb-5 lg:pr-20">
+            Graphic Designer (B.A.) <br />
+            Full-Stack Web Dev <br />
+            Tech Enthusiast
           </div>
           <div className="flex gap-4">
             <GithubBtn />
             <LinkedInBtn />
           </div>
-        </motion.div>
+        </motion.a>
       </motion.section>
     </div>
   );
