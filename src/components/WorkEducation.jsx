@@ -34,16 +34,14 @@ const projects = [
     componentName: 'BC',
   },
 ];
-function ProjectGalerie() {
+function WorkEducation() {
   const [activeProject, setActiveProject] = useState();
 
   return (
     <div className="mt-20">
       <div className="max-w-[65rem] mx-auto">
-        <h2 className="text-3xl flex justify-center sm:text-3xl md:text-3xl font-bold pb-2 ">Projects</h2>
-        <div className="flex justify-between">
-          <GalleryIcons projects={projects} activeProject={activeProject} setActiveProject={setActiveProject} />
-        </div>
+        <h2 className="text-3xl sm:text-3xl md:text-3xl font-bold pb-2 ">Work & Education</h2>
+
         <div className="mx-auto max-w-[1500px]">
           <GalleryDetails project={activeProject} />
         </div>
@@ -52,4 +50,4 @@ function ProjectGalerie() {
   );
 }
 
-export default ProjectGalerie;
+export default WorkEducation;
