@@ -11,6 +11,12 @@ function Hero() {
     dragConstraints: { top: -50, bottom: 50, left: -50, right: 50 },
   };
 
+  const imgMarco = {
+    src: Marco,
+    alt: 'Picture of Marco Czirpek',
+    draggable: false,
+  };
+
   return (
     <div className="min-h-[90vh] flex items-center justify-center relative px-4 md:px-8 ">
       <motion.section className="flex lg:flex-row items-center justify-center h-full w-full max-w-[90rem] relative">
@@ -22,26 +28,27 @@ function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 6 }}
             className=" w-full max-w-[450px] z-[-2] rounded-full absolute blur-3xl lg:ml-[10px] lg:mt-[-100px]"
-            src={Marco}
-            alt="Picture of Marco Czirpek"
-            draggable={false}
+            {...imgMarco}
           />
           <img
             className="relative lg:mt-[-100px] lg:ml-[10px]  w-full max-w-[450px] z-[0] rounded-full"
-            src={Marco}
-            alt="Picture of Marco Czirpek"
-            draggable={false}
+            {...imgMarco}
           />
         </motion.a>
         <motion.a
           {...dragValues}
-          className="relative hover:cursor-pointer lg:ml-[-100px] lg:mt-[150px] w-full max-w-[600px] mt-8 px-4 lg:px-8 lg:py-7 rounded-xl z-1 backdrop-blur-md bg-white/55 ring-1 ring-black/5">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold pb-2">Hi, I'm Marco Czirpek</h1>
-          <div className="text-xl md:text-xl lg:text-2xl font-light pb-5 lg:pr-20">
+          className="relative hover:cursor-pointer lg:ml-[-100px] lg:mt-[150px] w-full max-w-[600px] px-4 lg:px-8 lg:py-7 rounded-xl z-1 backdrop-blur-md bg-white/55 ring-1 ring-black/5">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold pb-2 drop-shadow-lg drop-shadow-white/5">
+            Hi, I'm Marco Czirpek
+          </h1>
+          <h2 className="text-xl md:text-xl lg:text-3xl font-light pb-5 lg:pr-20 drop-shadow-md drop-shadow-white/20">
+            Graphic Designer and Full-Stack Developer from Cologne, Germany.
+          </h2>
+          {/* <div className="text-xl md:text-xl lg:text-2xl font-light pb-4 lg:pr-20 drop-shadow-md drop-shadow-white/20">
             Graphic Designer (B.A.) <br />
             Full-Stack Web Dev <br />
             Tech Enthusiast
-          </div>
+          </div> */}
           <div className="flex gap-4">
             <GithubBtn />
             <LinkedInBtn />

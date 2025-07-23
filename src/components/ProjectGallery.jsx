@@ -38,8 +38,8 @@ function ProjectGalerie() {
   const [activeProject, setActiveProject] = useState();
 
   return (
-    <div className="border-t ">
-      <div className="max-w-[90rem] mx-auto">
+    <div className="mt-20">
+      <div className="max-w-[65rem] mx-auto">
         <h2 className="text-3xl  sm:text-3xl md:text-3xl font-bold pb-2 ">Work & Education</h2>
         <div className="flex justify-between">
           <GalleryIcons projects={projects} activeProject={activeProject} setActiveProject={setActiveProject} />
