@@ -20,7 +20,7 @@ function Hero() {
   return (
     <div className="min-h-[90vh] flex items-center justify-center relative px-4 md:px-8 ">
       <motion.section className="flex lg:flex-row items-center justify-center h-full w-full max-w-[90rem] relative">
-        <motion.a
+        <motion.div
           {...dragValues}
           className="w-[75%] lg:w-[50%] xl:w-[450px] flex justify-center lg:justify-start hover:cursor-pointer">
           <motion.img
@@ -31,11 +31,11 @@ function Hero() {
             {...imgMarco}
           />
           <img
-            className="relative lg:mt-[-100px] lg:ml-[10px]  w-full max-w-[450px] z-[0] rounded-full"
+            className="relative lg:mt-[-100px] lg:ml-[10px]  w-full max-w-[450px] z-[1] rounded-full"
             {...imgMarco}
           />
-        </motion.a>
-        <motion.a
+        </motion.div>
+        <motion.div
           {...dragValues}
           className="relative hover:cursor-pointer lg:ml-[-100px] lg:mt-[150px] w-full max-w-[600px] px-4 lg:px-8 lg:py-7 rounded-xl z-1 backdrop-blur-md bg-white/55 ring-1 ring-black/5">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold pb-2 drop-shadow-lg drop-shadow-white/5">
@@ -53,7 +53,7 @@ function Hero() {
             <GithubBtn />
             <LinkedInBtn />
           </div>
-        </motion.a>
+        </motion.div>
       </motion.section>
     </div>
   );
