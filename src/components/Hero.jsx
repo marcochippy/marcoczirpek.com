@@ -1,6 +1,7 @@
 import Marco from '../assets/Marco.jpg';
 import { motion } from 'framer-motion';
 import { GithubBtn, LinkedInBtn, MailBtn } from './Btns';
+import { floatingAnimation, floatingAnimation2, floatingAnimation3 } from '../utils/floatingAnimation';
 
 function Hero() {
   const dragValues = {
@@ -9,36 +10,6 @@ function Hero() {
     whileDrag: { scale: 0.98 },
     drag: true,
     dragConstraints: { top: -70, bottom: 70, left: -70, right: 70 },
-  };
-
-  const floatingAnimation = {
-    y: [0, -3, 0],
-    x: [0, 4, 0],
-    transition: {
-      duration: 3,
-      repeat: Infinity,
-      ease: 'easeInOut',
-    },
-  };
-
-  const floatingAnimation2 = {
-    y: [0, 4, 0],
-    x: [0, -3, 0],
-    transition: {
-      duration: 5,
-      repeat: Infinity,
-      ease: 'easeInOut',
-    },
-  };
-
-  const floatingAnimation3 = {
-    y: [0, 5, 0],
-    x: [0, -5, 0],
-    transition: {
-      duration: 8,
-      repeat: Infinity,
-      ease: 'easeInOut',
-    },
   };
 
   const imgMarco = {
@@ -115,7 +86,7 @@ function Hero() {
               scale: 1,
             }}
             className="relative hover:cursor-pointer lg:ml-[-64rem] lg:mt-[430px] w-[340px] px-4 lg:px-8 lg:py-7 rounded-xl z-1 backdrop-blur-md bg-white/55 ring-1 ring-black/5">
-            <h3 className="text-xl md:text-xl lg:text-[1.8rem] text-center font-bold pb-5  drop-shadow-md drop-shadow-white/20">
+            <h3 className="text-xl md:text-xl lg:text-[1.8rem] text-center font-bold pb-4  drop-shadow-md drop-shadow-white/20">
               Where to Find Me
             </h3>
             <div className="flex gap-4 items-center justify-center">

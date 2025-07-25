@@ -12,7 +12,7 @@ import zeimg6 from '../../../assets/ZE/Web_ContentForte_Mockup_Lowres.webp';
 
 import hmkwlogo from '../../../assets/HMKW/hmkw-logo.webp';
 import hmkwvideo from '../../../assets/HMKW/Connect_Startup.mp4';
-import hmkwopener from '../../../assets/HMKW/Connect_Opener_Top2.webp';
+import hmkwopener from '../../../assets/HMKW/Connect_Opener_Top.webp';
 import hmkwimg2 from '../../../assets/HMKW/Connect_Mockup_09.webp';
 
 import bclogo from '../../../assets/BC/bc-logo.webp';
@@ -80,8 +80,6 @@ export const workEducationItems = [
     images: [
       { imgUrl: bcimg1, rowSpan: 2, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
       { imgUrl: bcimg2, rowSpan: 2, colSpan: 2, alt: 'WBS Coding bootcamp classroom' },
-      // { imgUrl: wbsimg2, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-      // { imgUrl: wbsimg1, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
     ],
   },
 ];
