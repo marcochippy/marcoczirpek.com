@@ -1,18 +1,10 @@
 const WorkEducationCard = ({ project }) => {
   return (
-    <div className="px-8 pb-8 -mt-7 mb-6 h-auto min-h-[300px] bg-stone-100 z-10 border border-black/10 border-t-0 rounded-b-xl relative">
-      <p className="text-gray-600 text-xl mb-4 mt-2 ">{project.description}</p>
+    <div className="p-8 pt-1 h-auto min-h-[300px] bg-stone-100 z-10 border border-black/10 border-t-0 rounded-b-xl relative">
+      <p className="text-gray-600 text-xl -mt-1 mb-4 ">{project.description}</p>
       <div className="grid grid-flow-row auto-rows-max grid-cols-3 gap-5">
         {project.videos?.map((video, index) => (
-          <video
-            key={index}
-            src={video.videoUrl}
-            type="video/mp4"
-            autoPlay
-            muted
-            loop
-            className="rounded-lg relative mt-4"
-          />
+          <video key={index} src={video.videoUrl} type="video/mp4" autoPlay muted loop className="rounded-lg" />
         ))}
         {project.images?.map((image, index) => (
           <img
