@@ -6,7 +6,7 @@ export function GithubBtn() {
       className="w-[65px] drop-shadow-sm"
       whileHover={{
         scale: 1.1,
-        filter: 'drop-shadow(0 7px 7px rgb(0 0 0 / 0.25))',
+        filter: 'drop-shadow(0 0px 10px rgb(0 0 0 / 0.5))',
       }}
       transition={{
         type: 'spring',
@@ -33,7 +33,7 @@ export function LinkedInBtn() {
       className="w-[65px] drop-shadow-sm"
       whileHover={{
         scale: 1.1,
-        filter: 'drop-shadow(0 7px 7px rgb(0 0 0 / 0.25))',
+        filter: 'drop-shadow(0 0px 10px rgb(4 116 179 / 0.5))',
       }}
       transition={{
         type: 'spring',
@@ -57,7 +57,7 @@ export function LinkedInBtn() {
 export function LinkedIn2Btn() {
   return (
     <motion.a
-      whileHover={{ scale: 1.1, filter: 'drop-shadow(0 7px 7px rgb(0 0 0 / 0.25))' }}
+      whileHover={{ scale: 1.1, filter: 'drop-shadow(0 0px 10px rgb(255 255 255 / 0.75))' }}
       whileTap={{ scale: 0.95 }}
       whileDrag={{ scale: 0.9, rotate: 10 }}
       drag

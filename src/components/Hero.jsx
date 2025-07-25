@@ -25,9 +25,20 @@ function Hero() {
           className="w-[75%] lg:w-[50%] xl:w-[450px] flex justify-center lg:justify-start hover:cursor-pointer">
           <motion.img
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 6 }}
-            className=" w-full max-w-[450px] z-[-2] rounded-full absolute blur-3xl lg:ml-[10px] lg:mt-[-100px]"
+            animate={{
+              opacity: 1,
+              scale: 1.15,
+            }}
+            transition={{
+              opacity: { delay: 0.5, duration: 6 },
+              scale: {
+                duration: 5,
+                repeat: Infinity,
+                repeatType: 'reverse',
+                ease: 'easeInOut',
+              },
+            }}
+            className=" w-full max-w-[450px] z-[-2] rounded-full absolute blur-3xl lg:ml-[10px] lg:mt-[-100px] border"
             {...imgMarco}
           />
           <img
@@ -39,10 +50,10 @@ function Hero() {
           {...dragValues}
           className="relative hover:cursor-pointer lg:ml-[-100px] lg:mt-[150px] w-full max-w-[600px] px-4 lg:px-8 lg:py-7 rounded-xl z-1 backdrop-blur-md bg-white/55 ring-1 ring-black/5">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold pb-2 drop-shadow-lg drop-shadow-white/5">
-            Hi, I'm Marco Czirpek
+            Hi, I'm Marco
           </h1>
           <h2 className="text-xl md:text-xl lg:text-3xl font-light pb-5 lg:pr-20 drop-shadow-md drop-shadow-white/20">
-            Graphic Designer and Full-Stack Developer from Cologne, Germany.
+            Graphic Designer (B.A.), Full-Stack Developer and Tech Enthusiast from Cologne, Germany.
           </h2>
           {/* <div className="text-xl md:text-xl lg:text-2xl font-light pb-4 lg:pr-20 drop-shadow-md drop-shadow-white/20">
             Graphic Designer (B.A.) <br />
