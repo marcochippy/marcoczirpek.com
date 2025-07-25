@@ -1,6 +1,7 @@
 import WorkEducationCard from './gallery/WorkEducationCard';
 import { workEducationItems } from './gallery/items/WorkEducationItems';
 import WorkEducationCardClosedJs from './gallery/WorkEducationCardClosed';
+import { motion } from 'framer-motion';
 
 import { Accordion, AccordionItem as Item } from '@szhsin/react-accordion';
 
@@ -29,10 +30,14 @@ const AccordionItem = ({ header, children, ...rest }) => (
 
 function WorkEducation() {
   return (
-    <div className="-mt-10">
+    <motion.div
+      className="-mt-10 mb-20"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.5, ease: 'easeIn' }}>
       <div className="max-w-[65rem] mx-auto relative">
         <h3 className="text-3xl font-bold pb-2 ">Work & Education</h3>
-        <div className="relative">
+        <div className="relative backdrop-blur-md">
           <Accordion transition transitionTimeout={300}>
             {workEducationItems.map(project => (
               <AccordionItem key={project.id} header={WorkEducationCardClosedJs(project)}>
@@ -42,7 +47,7 @@ function WorkEducation() {
           </Accordion>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

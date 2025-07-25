@@ -9,7 +9,7 @@ function Home() {
     <div>
       <Hero />
       <WorkEducation />
-      <ProjectGallery />
+      {/* <ProjectGallery /> */}
       <AboutMe />
     </div>
   );

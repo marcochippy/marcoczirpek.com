@@ -1,5 +1,5 @@
 const WorkEducationCardClosedJs = project => (
-  <div className="p-8 h-auto w-[65rem]  hover:cursor-pointer z-5">
+  <div className="p-8 h-auto max-w-[65rem]  hover:cursor-pointer z-5">
     <div className="flex ">
       <img src={project.logo} alt={project.institution} className="rounded-lg w-30 h-30" />
 

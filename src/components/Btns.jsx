@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import mailIcon from '../assets/mail.png';
 
 export function GithubBtn() {
   return (
@@ -6,7 +7,7 @@ export function GithubBtn() {
       className="w-[65px] drop-shadow-sm"
       whileHover={{
         scale: 1.1,
-        filter: 'drop-shadow(0 0px 10px rgb(0 0 0 / 0.5))',
+        filter: 'drop-shadow(0 0px 10px rgb(0 0 0 / 0.3))',
       }}
       transition={{
         type: 'spring',
@@ -33,7 +34,7 @@ export function LinkedInBtn() {
       className="w-[65px] drop-shadow-sm"
       whileHover={{
         scale: 1.1,
-        filter: 'drop-shadow(0 0px 10px rgb(4 116 179 / 0.5))',
+        filter: 'drop-shadow(0 0px 12px rgb(4 116 179 / 0.5))',
       }}
       transition={{
         type: 'spring',
@@ -54,49 +55,24 @@ export function LinkedInBtn() {
   );
 }
 
-export function LinkedIn2Btn() {
+export function MailBtn() {
   return (
     <motion.a
-      whileHover={{ scale: 1.1, filter: 'drop-shadow(0 0px 10px rgb(255 255 255 / 0.75))' }}
+      className="w-[65px] h-[65px] bg-green-200 rounded-xl drop-shadow-sm flex items-center justify-center"
+      whileHover={{
+        scale: 1.1,
+        filter: 'drop-shadow(0 0px 12px rgb(185 248 207 / 0.6))',
+      }}
+      transition={{
+        type: 'spring',
+        stiffness: 400,
+        damping: 15,
+      }}
       whileTap={{ scale: 0.95 }}
-      whileDrag={{ scale: 0.9, rotate: 10 }}
-      drag
-      dragConstraints={{ top: -50, bottom: 50, left: -50, right: 50 }}
-      className="w-[65px] drop-shadow-md"
-      href="https://www.linkedin.com/in/marcoczirpek/"
+      href="mailto:contact@marcoczirpek.com?subject=Mail via marcoczirpek.com"
       target="_blank"
       rel="noopener noreferrer">
-      <img
-        className="rounded-xl h-[65px] inline"
-        src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-        alt="LinkedIn Icon"
-        draggable={false}
-      />
+      <img className="h-[50px]" src={mailIcon} alt="Mail Icon" draggable={false} />
     </motion.a>
   );
 }
-// function ZEIcon() {
-//   return (
-//     <motion.a
-//       className="w-[65px] drop-shadow-md"
-//       whileHover={{
-//         scale: 1.1,
-//         filter: "drop-shadow(0 7px 7px rgb(0 0 0 / 0.25))",
-//       }}
-//       transition={{
-//         type: "spring",
-//         stiffness: 400,
-//         damping: 15,
-//       }}
-//       whileTap={{ scale: 0.95 }}
-//       href="https://github.com/marcochippy"
-//       target="_blank"
-//       rel="noopener noreferrer">
-//       <img
-//         className=" bg-white p-2 rounded-xl h-[65px] inline"
-//         src={Marco}
-//         alt="LinkedIn Icon"
-//       />
-//     </motion.a>
-//   );
-// }

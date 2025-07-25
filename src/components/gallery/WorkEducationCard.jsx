@@ -4,13 +4,24 @@ const WorkEducationCard = ({ project }) => {
       <p className="text-gray-600 text-xl -mt-1 mb-4 ">{project.description}</p>
       <div className="grid grid-flow-row auto-rows-max grid-cols-3 gap-5">
         {project.videos?.map((video, index) => (
-          <video key={index} src={video.videoUrl} type="video/mp4" autoPlay muted loop className="rounded-lg" />
+          <video
+            key={index}
+            src={video.videoUrl}
+            type="video/mp4"
+            autoPlay
+            muted
+            loop
+            loading="lazy"
+            preload="none"
+            className="rounded-lg"
+          />
         ))}
         {project.images?.map((image, index) => (
           <img
             key={index}
             src={image.imgUrl}
             alt={image.alt}
+            loading="lazy"
             className={`rounded-lg ${image?.object || `object-cover`}  w-full h-full row-span-${
               image.rowSpan
             } col-span-${image.colSpan}`}
