@@ -13,7 +13,9 @@ const AboutMe = () => {
   };
 
   return (
-    <div className="max-w-[65rem] mx-auto flex lg:flex-row flex-col justify-between gap-8 ">
+    <section
+      id="About Me"
+      className="min-h-[60vh] max-w-[65rem] mt-30 mb-30 mx-auto flex lg:flex-row flex-col justify-between gap-8 ">
       <motion.div className="flex-1 max-w-[45rem] hover:cursor-pointer" {...dragValues}>
         <div className="px-8 py-7 lg:rounded-xl backdrop-blur-md bg-black/3 ring-1 ring-black/10">
           <h3 className="text-3xl font-bold pb-1 ">Designer’s Mind × Developer’s Hands</h3>
@@ -35,7 +37,7 @@ const AboutMe = () => {
         {...dragValues}>
         Social things like LinkedIn, Github, Button for email
       </motion.div>
-    </div>
+    </section>
   );
 };
 
