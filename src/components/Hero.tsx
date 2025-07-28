@@ -1,4 +1,4 @@
-import Marco from '@/assets/Marco.jpg';
+import Marco from '@/assets/Marco.webp';
 import { motion } from 'framer-motion';
 import { GithubBtn, LinkedInBtn, MailBtn } from './Btns';
 import { floatingAnimation, floatingAnimation2, floatingAnimation3 } from '@/utils/floatingAnimation';

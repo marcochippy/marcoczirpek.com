@@ -1,23 +1,23 @@
-import wbslogo from '../../assets/WBS/wbs_coding_school_logo.jpeg';
-import wbsimg1 from '../../assets/Marco.jpg';
-import wbsimg2 from '../../assets/react.svg';
+import wbslogo from '@/assets/WBS/wbs_coding_school_logo.jpeg';
+import wbsimg1 from '@/assets/Marco.webp';
+import wbsimg2 from '@/assets/react.svg';
 
-import zelogo from '../../assets/ZE/ze-feder.png';
-import zeimg1 from '../../assets/ZE/Magazine_PP.webp';
-import zeimg2 from '../../assets/ZE/Magazine_Rhoen.webp';
-import zeimg3 from '../../assets/ZE/Magazine_Wie_Is.webp';
-import zeimg4 from '../../assets/ZE/Photo_PP.webp';
-import zeimg5 from '../../assets/ZE/Photo_Ri.webp';
-import zeimg6 from '../../assets/ZE/Web_ContentForte_Mockup_Lowres.webp';
+import zelogo from '@/assets/ZE/ze-feder.png';
+import zeimg1 from '@/assets/ZE/Magazine_PP.webp';
+import zeimg2 from '@/assets/ZE/Magazine_Rhoen.webp';
+import zeimg3 from '@/assets/ZE/Magazine_Wie_Is.webp';
+import zeimg4 from '@/assets/ZE/Photo_PP.webp';
+import zeimg5 from '@/assets/ZE/Photo_Ri.webp';
+import zeimg6 from '@/assets/ZE/Web_ContentForte_Mockup_Lowres.webp';
 
-import hmkwlogo from '../../assets/HMKW/hmkw-logo.webp';
-import hmkwvideo from '../../assets/HMKW/Connect_Startup.mp4';
-import hmkwopener from '../../assets/HMKW/Connect_Opener_Top.webp';
-import hmkwimg2 from '../../assets/HMKW/Connect_Mockup_09.webp';
+import hmkwlogo from '@/assets/HMKW/hmkw-logo.webp';
+import hmkwvideo from '@/assets/HMKW/Connect_Startup.mp4';
+import hmkwopener from '@/assets/HMKW/Connect_Opener_Top.webp';
+import hmkwimg2 from '@/assets/HMKW/Connect_Mockup_09.webp';
 
-import bclogo from '../../assets/BC/bc-logo.webp';
-import bcimg1 from '../../assets/BC/Bankingnews_Cover_Open_1.webp';
-import bcimg2 from '../../assets/BC/Bankingnews_Inside_1.webp';
+import bclogo from '@/assets/BC/bc-logo.webp';
+import bcimg1 from '@/assets/BC/Bankingnews_Cover_Open_1.webp';
+import bcimg2 from '@/assets/BC/Bankingnews_Inside_1.webp';
 
 export const workEducationItems = [
   {
