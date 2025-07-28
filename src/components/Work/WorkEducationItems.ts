@@ -1,6 +1,7 @@
 import wbslogo from '@/assets/WBS/wbs_coding_school_logo.jpeg';
-import wbsimg1 from '@/assets/Marco.webp';
-import wbsimg2 from '@/assets/react.svg';
+import wbsimg1 from '@/assets/WBS/wbs-tracker-1.webp';
+import wbsvid2 from '@/assets/WBS/wbs-tracker-2.mp4';
+import wbsimg3 from '@/assets/WBS/wbs-tracker-2.webp';
 
 import zelogo from '@/assets/ZE/ze-feder.png';
 import zeimg1 from '@/assets/ZE/Magazine_PP.webp';
@@ -29,11 +30,10 @@ export const workEducationItems = [
       'I completed an intensive four-month bootcamp in modern full-stack web development. I gained hands-on experience in developing, deploying and maintaining web applications using the latest technologies, such as JavaScript, React and Node.js.',
     logo: wbslogo,
     images: [
-      { imgUrl: wbsimg1, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-      { imgUrl: wbsimg2, rowSpan: 2, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-      { imgUrl: wbsimg2, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-      { imgUrl: wbsimg1, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
+      { imgUrl: wbsimg1, rowSpan: 1, colSpan: 1, alt: 'Image from Web Development Bootcamp' },
+      { imgUrl: wbsimg3, rowSpan: 1, colSpan: 1, alt: 'Image from Web Development Bootcamp' },
     ],
+    videos: [{ videoUrl: wbsvid2, rowSpan: 1, colSpan: 1, alt: 'Connect Video Loop' }],
   },
   {
     id: 2,
@@ -43,12 +43,12 @@ export const workEducationItems = [
     description: `After graduating with my Bachelor's degree in 2022, I joined Zimmermann Editorial GmbH, an agency specialising in internal communications for clients such as DHL Group, secusmart and Deutsche Bank. Working across a variety of media, including print, newsletters and mobile video reporting, has allowed me to refine my skills in both traditional and digital communication design. Working on smaller web projects made me realise how much I enjoyed the creative, challenging and technical aspects of web development.`,
     logo: zelogo,
     images: [
-      { imgUrl: zeimg4, rowSpan: 2, colSpan: 2, alt: 'WBS Coding bootcamp classroom' },
-      { imgUrl: zeimg1, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-      { imgUrl: zeimg2, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-      { imgUrl: zeimg3, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-      { imgUrl: zeimg5, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-      { imgUrl: zeimg6, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
+      { imgUrl: zeimg4, rowSpan: 2, colSpan: 2, alt: 'Image of Magazine by ZimmermannEditorial' },
+      { imgUrl: zeimg1, rowSpan: 1, colSpan: 1, alt: 'Image of Magazine by ZimmermannEditorial' },
+      { imgUrl: zeimg2, rowSpan: 1, colSpan: 1, alt: 'Image of Magazine by ZimmermannEditorial' },
+      { imgUrl: zeimg3, rowSpan: 1, colSpan: 1, alt: 'Image of Magazine by ZimmermannEditorial' },
+      { imgUrl: zeimg5, rowSpan: 1, colSpan: 1, alt: 'Image of Magazine by ZimmermannEditorial' },
+      { imgUrl: zeimg6, rowSpan: 1, colSpan: 1, alt: 'Image of Webpage by ZimmermannEditorial' },
     ],
   },
   {
@@ -63,10 +63,10 @@ export const workEducationItems = [
         imgUrl: hmkwopener,
         rowSpan: 2,
         colSpan: 2,
-        alt: 'WBS Coding bootcamp classroom',
+        alt: 'Image of multiple Connect-App mockups',
         object: 'object-cover object-left',
       },
-      { imgUrl: hmkwimg2, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom', object: 'object-contain' },
+      { imgUrl: hmkwimg2, rowSpan: 1, colSpan: 1, alt: 'Image of Connect-App mockups', object: 'object-contain' },
     ],
     videos: [{ videoUrl: hmkwvideo, rowSpan: 1, colSpan: 1, alt: 'Connect Video Loop' }],
   },
@@ -78,8 +78,8 @@ export const workEducationItems = [
     description: `During my university years, I worked as a working student at BANKINGCLUB GmbH, a hub for professionals in the banking and finance sector. This role allowed me to engage in the production of the company's print magazine, BANKINGNEWS. My responsibilities also included various design tasks, from supporting conventions to engaging in photography, eventually expanding into video content production.`,
     logo: bclogo,
     images: [
-      { imgUrl: bcimg1, rowSpan: 2, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-      { imgUrl: bcimg2, rowSpan: 2, colSpan: 2, alt: 'WBS Coding bootcamp classroom' },
+      { imgUrl: bcimg1, rowSpan: 2, colSpan: 1, alt: 'Work exhibit of BANKINGNEWS' },
+      { imgUrl: bcimg2, rowSpan: 2, colSpan: 2, alt: 'Work exhibit of BANKINGNEWS' },
     ],
   },
 ];

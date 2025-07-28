@@ -24,7 +24,7 @@ const GalleryIcons = ({ projects, activeProject, setActiveProject }: GalleryIcon
           whileTap={{ scale: 0.95 }}
           key={project.id}
           onClick={() => setActiveProject(project)}>
-          <img src={project.icon} className={`h-20 w-20 p-1 m-1 ${project.extraStyling}`} alt="" />
+          <img src={project.icon} className={`h-20 w-20 p-2 m-1 ${project.extraStyling}`} alt="" />
         </motion.button>
       ))}
     </div>
