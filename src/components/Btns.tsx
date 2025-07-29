@@ -72,7 +72,7 @@ export function MailBtn() {
       href="mailto:contact@marcoczirpek.com?subject=Mail via marcoczirpek.com"
       target="_blank"
       rel="noopener noreferrer">
-      <img className="h-[50px]" src={mailIcon} alt="Mail Icon" draggable={false} />
+      <img className="h-[45px]" src={mailIcon} alt="Mail Icon" draggable={false} />
     </motion.a>
   );
 }

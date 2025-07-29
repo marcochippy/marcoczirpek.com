@@ -3,19 +3,12 @@ import pokeball from '@/assets/Pokemon/Pokeball.png';
 export const ProjectItems = [
   {
     id: 1,
-    componentName: 'Pokemon',
-    title: 'Pokemon Game',
-    description:
-      'I completed an intensive four-month bootcamp in modern full-stack web development. I gained hands-on experience in developing, deploying and maintaining web applications using the latest technologies, such as JavaScript, React and Node.js.',
+    title: 'Pokémon Game',
+    description: `As part of the bootcamp, we developed a small Pokémon-inspired browser game within just one week, featuring both a frontend and backend. Players choose a Pokémon of their liking and battle through rounds against randomly generated opponents. Once defeated, they can enter their name into a global leaderboard to see how far they made it compared to others. The design and gameplay were inspired by the style of the original Pokémon games. Check out the game for yourself here. I'm currently reworking the project using the Next.js framework.`,
     icon: pokeball,
     bgColor: 'bg-white',
     extraStyling: 'pixelated',
     highlight: '172 0 0',
-    // images: [
-    //   { imgUrl: wbsimg1, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-    //   { imgUrl: wbsimg2, rowSpan: 2, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-    //   { imgUrl: wbsimg2, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-    //   { imgUrl: wbsimg1, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' },
-    // ],
+    images: [{ imgUrl: pokeball, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' }],
   },
 ];

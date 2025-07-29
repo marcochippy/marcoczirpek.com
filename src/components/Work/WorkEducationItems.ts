@@ -4,12 +4,12 @@ import wbsvid2 from '@/assets/WBS/wbs-tracker-2.mp4';
 import wbsimg3 from '@/assets/WBS/wbs-tracker-2.webp';
 
 import zelogo from '@/assets/ZE/ze-feder.png';
-import zeimg1 from '@/assets/ZE/Magazine_PP.webp';
-import zeimg2 from '@/assets/ZE/Magazine_Rhoen.webp';
-import zeimg3 from '@/assets/ZE/Magazine_Wie_Is.webp';
-import zeimg4 from '@/assets/ZE/Photo_PP.webp';
-import zeimg5 from '@/assets/ZE/Photo_Ri.webp';
-import zeimg6 from '@/assets/ZE/Web_ContentForte_Mockup_Lowres.webp';
+import zeimg1 from '@/assets/ZE/ze-rhoen-1.webp';
+import zeimg2 from '@/assets/ZE/ze-richard-2.webp';
+import zeimg3 from '@/assets/ZE/ze-richard.webp';
+import zeimg4 from '@/assets/ZE/ze-weava-1.webp';
+import zeimg5 from '@/assets/ZE/ze-weava.webp';
+import zeimg6 from '@/assets/ZE/ze-wieis.webp';
 
 import hmkwlogo from '@/assets/HMKW/hmkw-logo.webp';
 import hmkwvideo from '@/assets/HMKW/Connect_Startup.mp4';
@@ -26,8 +26,7 @@ export const workEducationItems = [
     title: 'Full-Stack Web Development Bootcamp',
     institution: 'WBS Coding School',
     period: '03.2025 - 07.2025',
-    description:
-      'I completed an intensive four-month bootcamp in modern full-stack web development. I gained hands-on experience in developing, deploying and maintaining web applications using the latest technologies, such as JavaScript, React and Node.js.',
+    description: `I completed an intensive four-month bootcamp in modern full-stack web development. I gained hands-on experience in developing, deploying, and maintaining web applications using the latest technologies, such as JavaScript, React, and Node.js. For the final project, my team and I built a social workout tracker — an app designed to connect people with compatible workout routines and encourage them to exercise together. The app also features AI-generated workout plans tailored to each user’s goals and preferences.`,
     logo: wbslogo,
     images: [
       { imgUrl: wbsimg1, rowSpan: 1, colSpan: 1, alt: 'Image from Web Development Bootcamp' },
@@ -43,12 +42,12 @@ export const workEducationItems = [
     description: `After graduating with my Bachelor's degree in 2022, I joined Zimmermann Editorial GmbH, an agency specialising in internal communications for clients such as DHL Group, secusmart and Deutsche Bank. Working across a variety of media, including print, newsletters and mobile video reporting, has allowed me to refine my skills in both traditional and digital communication design. Working on smaller web projects made me realise how much I enjoyed the creative, challenging and technical aspects of web development.`,
     logo: zelogo,
     images: [
-      { imgUrl: zeimg4, rowSpan: 2, colSpan: 2, alt: 'Image of Magazine by ZimmermannEditorial' },
-      { imgUrl: zeimg1, rowSpan: 1, colSpan: 1, alt: 'Image of Magazine by ZimmermannEditorial' },
-      { imgUrl: zeimg2, rowSpan: 1, colSpan: 1, alt: 'Image of Magazine by ZimmermannEditorial' },
+      { imgUrl: zeimg5, rowSpan: 2, colSpan: 2, alt: 'Image of Magazine by ZimmermannEditorial' },
+      { imgUrl: zeimg6, rowSpan: 1, colSpan: 1, alt: 'Image of Magazine by ZimmermannEditorial' },
       { imgUrl: zeimg3, rowSpan: 1, colSpan: 1, alt: 'Image of Magazine by ZimmermannEditorial' },
-      { imgUrl: zeimg5, rowSpan: 1, colSpan: 1, alt: 'Image of Magazine by ZimmermannEditorial' },
-      { imgUrl: zeimg6, rowSpan: 1, colSpan: 1, alt: 'Image of Webpage by ZimmermannEditorial' },
+      { imgUrl: zeimg4, rowSpan: 1, colSpan: 1, alt: 'Image of Magazine by ZimmermannEditorial' },
+      { imgUrl: zeimg2, rowSpan: 1, colSpan: 1, alt: 'Image of Magazine by ZimmermannEditorial' },
+      { imgUrl: zeimg1, rowSpan: 1, colSpan: 1, alt: 'Image of Magazine by ZimmermannEditorial' },
     ],
   },
   {
@@ -56,7 +55,7 @@ export const workEducationItems = [
     title: 'Graphic Design and Visual Communication (B.A.)',
     institution: 'HMKW Hochschule für Medien, Kommunikation und Wirtschaft',
     period: '10.2017 - 09.2022',
-    description: `I studied and about final project CONNECT. For my bachelor's thesis, I researched the increasing use of social media due to the COVID-19 pandemic and the potential consequences for people. As a solution to the problem of people's loneliness, the concept of an app was developed that would rethink the role of social media and allow users to engage in offline activities, alone or with others, that suit them.`,
+    description: `I studied Graphic Design and Visual Communication, where I developed a strong interest in the relationship between design and technology. For my bachelor's thesis, I researched the increasing use of social media due to the COVID-19 pandemic and the potential consequences for people. As a solution to the problem of people's loneliness, I developed a concept for an app called Connect that rethinks the role of social media and encourages users to engage in offline activities, alone or with others, that suit them.`,
     logo: hmkwlogo,
     images: [
       {

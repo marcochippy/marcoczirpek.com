@@ -32,8 +32,8 @@ const Navbar = () => {
   }, [menus]);
 
   return (
-    <header className="fixed top-3 left-1/2 transform -translate-x-1/2 z-50 flex px-1 lg:px-0 w-[65rem]">
-      <nav className="flex ml-auto mr-0 py-2 px-1 rounded-full transition-all duration-400 backdrop-blur-md bg-white/5 ring-1 ring-black/10">
+    <header className="fixed top-3 left-1/2 transform -translate-x-1/2 z-50 flex px-1 lg:px-0 w-[65rem] pointer-events-none">
+      <nav className="flex ml-auto mr-0 py-2 px-1 rounded-full transition-all duration-400 backdrop-blur-md bg-white/5 ring-1 ring-black/10 pointer-events-auto">
         {menus.map((menu, i) => {
           if (menu === 'Marco Czirpek') {
             return null;

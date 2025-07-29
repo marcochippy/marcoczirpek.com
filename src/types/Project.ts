@@ -16,11 +16,11 @@ export interface Video {
 export interface ProjectItem {
   id: number;
   title: string;
-  componentName: string;
   description: string;
   icon: string;
   bgColor: string;
   extraStyling: string;
+  // link: string;
   highlight: string;
   images?: Image[];
   videos?: Video[];
