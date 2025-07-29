@@ -48,7 +48,7 @@ const Hero = () => {
                   ease: 'easeInOut',
                 },
               }}
-              className=" w-full max-w-[450px] z-[-2] hidden md:absolute rounded-full blur-3xl lg:ml-[10px] lg:mt-[-100px]"
+              className=" w-full max-w-[450px] z-[-2] hidden md:flex absolute rounded-full blur-3xl lg:ml-[10px] "
               {...imgMarco}
             />
             <img
