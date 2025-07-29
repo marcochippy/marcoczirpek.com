@@ -7,14 +7,14 @@ import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 
 const WorkEducation = () => {
   return (
-    <div id="Work & Education" className="min-h-[50vh]">
+    <div id="Work & Education" className="md:w-full w-[95%] mx-auto min-h-[50vh]">
       <motion.section
         className="-mt-7 mb-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5, ease: easeIn }}>
-        <div className="max-w-[65rem] mx-auto relative">
-          <h3 className="text-3xl font-bold pb-2 ">Work & Education</h3>
+        <div className="w-full md:max-w-[65rem] md:mx-auto relative">
+          <h3 className="text-2xl md:text-3xl font-bold pb-2 ">Work & Education</h3>
           <div className="relative backdrop-blur-md">
             <Accordion transition transitionTimeout={300}>
               {workEducationItems.map(item => (

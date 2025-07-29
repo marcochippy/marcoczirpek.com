@@ -16,7 +16,7 @@ export const ProjectItems = [
     deployedLink: 'https://pokemon-mono-frontend.onrender.com/',
     deployedText: 'Check out the Game here',
     tools: 'React, Tailwindcss, Express, MongoDB',
-    images: [{ imgUrl: pokemon1, rowSpan: 1, colSpan: 1, alt: 'WBS Coding bootcamp classroom' }],
-    videos: [{ videoUrl: pokemon2, rowSpan: 1, colSpan: 1, alt: 'Connect Video Loop' }],
+    images: [{ imgUrl: pokemon1, rowSpan: 2, colSpan: 1, alt: 'WBS Coding bootcamp classroom' }],
+    videos: [{ videoUrl: pokemon2, rowSpan: 2, colSpan: 1, alt: 'Connect Video Loop' }],
   },
 ];

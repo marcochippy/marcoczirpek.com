@@ -8,8 +8,8 @@ const ProjectGallery = () => {
   const [activeProject, setActiveProject] = useState<ProjectItem | null>(null);
 
   return (
-    <section id="Projects" className="mt-20 w-[65rem] mx-auto">
-      <h3 className="text-3xl font-bold flex justify-center pb-3">
+    <section id="Projects" className="md:mt-20 mt-5 md:mb-0 mb-10 px-5 md:px-0 w-full md:w-[65rem] mx-auto">
+      <h3 className="text-3xl font-bold flex justify-center pb-3 text-center md:text-left">
         {(activeProject && 'Projects') || 'Choose a project from the bar below'}
       </h3>
 
