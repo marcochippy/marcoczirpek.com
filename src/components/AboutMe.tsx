@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { GithubBtn, LinkedInBtn, MailBtn } from './Btns';
+import { useResponsiveDrag } from '@/utils/useResponsiveDrag';
 
 const AboutMe = () => {
   const textFormat = 'md:text-xl text-base pb-3 pr-5';
@@ -7,13 +8,7 @@ const AboutMe = () => {
   const socialSpacing = 'flex items-center place-content-between pb-5';
   const socialText = 'md:text-xl text-base pr-5 w-[75%]';
 
-  const dragValues = {
-    whileHover: { scale: 1.015 },
-    whileTap: { scale: 0.95 },
-    whileDrag: { scale: 0.98 },
-    drag: false,
-    dragConstraints: { top: -70, bottom: 70, left: -70, right: 70 },
-  };
+  const dragValues = useResponsiveDrag();
 
   return (
     <section

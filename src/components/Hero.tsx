@@ -2,15 +2,10 @@ import Marco from '@/assets/Marco.webp';
 import { motion } from 'framer-motion';
 import { GithubBtn, LinkedInBtn, MailBtn } from './Btns';
 import { floatingAnimation, floatingAnimation2, floatingAnimation3 } from '@/utils/floatingAnimation';
+import { useResponsiveDrag } from '@/utils/useResponsiveDrag';
 
 const Hero = () => {
-  const dragValues = {
-    whileHover: { scale: 1.015 },
-    whileTap: { scale: 0.95 },
-    whileDrag: { scale: 0.98 },
-    drag: true,
-    dragConstraints: { top: -70, bottom: 70, left: -70, right: 70 },
-  };
+  const dragValues = useResponsiveDrag();
 
   const imgMarco = {
     src: Marco,
