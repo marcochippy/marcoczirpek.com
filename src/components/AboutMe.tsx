@@ -11,7 +11,7 @@ const AboutMe = () => {
     whileHover: { scale: 1.015 },
     whileTap: { scale: 0.95 },
     whileDrag: { scale: 0.98 },
-    drag: true,
+    drag: false,
     dragConstraints: { top: -70, bottom: 70, left: -70, right: 70 },
   };
 

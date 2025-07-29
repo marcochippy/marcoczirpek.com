@@ -31,7 +31,7 @@ const Hero = () => {
             y: 0,
             scale: 1,
           }}
-          className="w-[75%] lg:w-[50%] xl:w-[450px] flex justify-center lg:justify-start hover:cursor-pointer -mt-10 md:mt-0 ">
+          className="w-[75%] lg:w-[50%] xl:w-[450px]  justify-center lg:justify-start hover:cursor-pointer -mt-10 md:mt-0 ">
           <motion.div animate={floatingAnimation} className="relative w-full">
             <motion.img
               initial={{ opacity: 0 }}
@@ -48,7 +48,7 @@ const Hero = () => {
                   ease: 'easeInOut',
                 },
               }}
-              className=" w-full max-w-[450px] z-[-2] rounded-full absolute blur-3xl lg:ml-[10px] lg:mt-[-100px]"
+              className=" w-full max-w-[450px] z-[-2] hidden md:absolute rounded-full blur-3xl lg:ml-[10px] lg:mt-[-100px]"
               {...imgMarco}
             />
             <img
