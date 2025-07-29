@@ -22,7 +22,7 @@ const ImprintGDPR = () => {
           Marco Czirpek <br />
           impressum@marcoczirpek.com
         </p>
-        <h4 className="text-lg md:text-xl font-bold pt-4">Über diese Website</h4>
+        <h4 className="text-lg md:text-xl font-bold pt-4">Über diese Website </h4>
         <p className="py-1">
           Diese Website ist ein rein privates, nicht-kommerzielles Projekt. Sie dokumentiert persönliche und berufliche
           Erfahrungen zu rein informativen Zwecken, ohne kommerzielle Zielsetzung. <br />
