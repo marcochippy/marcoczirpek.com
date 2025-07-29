@@ -1,4 +1,3 @@
 # React + TypeScript + Vite
 
-Readme follows maybe
-marcoczirpek.com
+Readme follows maybe. Check out marcoczirpek.com
