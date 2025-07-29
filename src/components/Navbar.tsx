@@ -42,8 +42,8 @@ const Navbar = () => {
             <a
               key={i}
               href={`#${menu}`}
-              className={`mx-1 py-2 px-4 transition-all rounded-full duration-400 backdrop-blur-sm ring-1 ring-black/3 hover:font-bold hover:bg-green-300/70 hover:ring-1 hover:ring-black/10 ${
-                activeSection === menu ? 'bg-green-300/70 font-bold ring-1 ring-black/10 ' : ''
+              className={`mx-1 py-2 px-4 transition-all rounded-full duration-400 backdrop-blur-sm ring-1 ring-black/3 hover:font-bold hover:bg-green-300/70 hover:ring-black/10 ${
+                activeSection === menu ? 'bg-green-300/70 font-bold ring-black/10 ' : ''
               }`}>
               {menu}
             </a>

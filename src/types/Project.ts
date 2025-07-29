@@ -20,8 +20,12 @@ export interface ProjectItem {
   icon: string;
   bgColor: string;
   extraStyling: string;
-  // link: string;
   highlight: string;
+  githubLink?: string;
+  githubText?: string;
+  deployedLink?: string;
+  deployedText?: string;
+  tools: string;
   images?: Image[];
   videos?: Video[];
 }

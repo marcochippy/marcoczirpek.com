@@ -14,7 +14,7 @@ const GalleryIcons = ({ projects, activeProject, setActiveProject }: GalleryIcon
           whileHover={{
             scale: activeProject?.id === project.id ? 1.05 : 1.025,
             opacity: 1,
-            filter: `drop-shadow(0 0px 10px rgb(${project.highlight} / 0.5))`,
+            filter: `drop-shadow(0 0px 10px rgb(0 0 0 / 0.3))`,
           }}
           transition={{
             type: 'spring',
