@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 .wrangler
-wrangler.toml
 tsconfig.tsbuildinfo
