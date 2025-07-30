@@ -28,6 +28,6 @@
     /* React Router types */
     "rootDirs": [".", "./.react-router/types"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx", ".react-router/types/**/*"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx", ".react-router/types/**/*", "custom.d.ts"],
   "exclude": ["node_modules", "dist"]
 }

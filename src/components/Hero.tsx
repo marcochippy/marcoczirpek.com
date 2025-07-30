@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { GithubBtn, LinkedInBtn, MailBtn } from './Btns';
 import { floatingAnimation, floatingAnimation2, floatingAnimation3 } from '@/utils/floatingAnimation';
 import { useResponsiveDrag } from '@/utils/useResponsiveDrag';
+import { MotionGlobalConfig } from 'framer-motion';
 
 const Hero = () => {
   const dragValues = useResponsiveDrag();
@@ -13,11 +14,20 @@ const Hero = () => {
     draggable: false,
   };
 
+  const disableAnimationsOnMobile = () => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      MotionGlobalConfig.skipAnimations = true;
+    }
+  };
+
+  disableAnimationsOnMobile();
+
   return (
     <section
       id="Marco Czirpek"
-      className="min-h-[90vh] flex items-center justify-center relative md:ml-25 px-2 md:px-4 ">
-      <motion.section className="flex flex-col md:flex-row items-center justify-center h-full w-full md:max-w-[90rem] relative">
+      className="min-h-[90vh] md:w-full flex items-center justify-center relative md:ml-25 md:px-2 ">
+      <motion.section className="flex flex-col md:flex-row items-center justify-center h-full w-[90vw] md:w-full md:max-w-[90rem] relative">
         <motion.div
           {...dragValues}
           initial={{ opacity: 0, y: 50, scale: 0.9 }}
@@ -26,7 +36,7 @@ const Hero = () => {
             y: 0,
             scale: 1,
           }}
-          className="w-[75%] lg:w-[50%] xl:w-[450px]  justify-center lg:justify-start hover:cursor-pointer -mt-10 md:mt-0 ">
+          className="w-[75%] md:w-[450px] justify-center md:justify-start hover:cursor-pointer -mt-10 md:mt-0 ">
           <motion.div animate={floatingAnimation} className="relative w-full">
             <motion.img
               initial={{ opacity: 0 }}
@@ -43,11 +53,12 @@ const Hero = () => {
                   ease: 'easeInOut',
                 },
               }}
-              className=" w-full max-w-[450px] z-[-2] hidden md:flex absolute rounded-full blur-3xl lg:ml-[10px] "
+              className=" w-full md:max-w-[450px] z-[-2] hidden md:flex absolute rounded-full blur-3xl md:ml-[10px] "
               {...imgMarco}
             />
             <img
-              className="relative lg:mt-[-100px] lg:ml-[10px] w-full max-w-[450px] z-[1] rounded-full"
+              className="relative md:mt-[-100px] md:ml-[10px] w-full max-w-[450px] z-[1] rounded-full"
+              fetchPriority="high"
               {...imgMarco}
             />
           </motion.div>
@@ -61,12 +72,12 @@ const Hero = () => {
               x: 0,
               scale: 1,
             }}
-            className="relative hover:cursor-pointer mt-2 lg:ml-[-100px] lg:mt-[150px] w-full max-w-[700px] px-6 py-4 lg:px-8 lg:py-7 md:mb-0 mb-2 rounded-xl z-1 backdrop-blur-md bg-white/55 ring-1 ring-black/5">
+            className="relative hover:cursor-pointer mt-2 md:ml-[-100px] md:mt-[150px] w-full max-w-[700px] px-6 py-4 md:px-8 md:py-7 md:mb-0 mb-2 rounded-xl z-1 backdrop-blur-md bg-white/55 ring-1 ring-black/5">
             <div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold pb-2 drop-shadow-lg drop-shadow-white/5">
                 Hi, I'm Marco Czirpek
               </h1>
-              <h2 className="text-xl md:text-xl lg:text-3xl font-light md:pb-4 pb-2 lg:pr-20 drop-shadow-md drop-shadow-white/20">
+              <h2 className="text-xl md:text-xl lg:text-3xl font-light md:pb-4 pb-2 md:pr-20 drop-shadow-md drop-shadow-white/20">
                 Graphic Designer (B.A.), Full-Stack Developer and Tech Enthusiast from Cologne, Germany.
               </h2>
             </div>
@@ -82,7 +93,7 @@ const Hero = () => {
               y: 0,
               scale: 1,
             }}
-            className="relative hover:cursor-pointer md:ml-[-64rem] md:mt-[430px] w-[96vw] md:w-[340px] px-4 py-4 md:px-8 md:py-7 rounded-xl z-1 backdrop-blur-md bg-white/55 ring-1 ring-black/5">
+            className="relative hover:cursor-pointer lg:ml-[-64rem] md:ml-[-52rem] md:mt-[430px] w-[90vw] md:max-w-[340px] px-4 py-4 md:px-8 md:py-7 rounded-xl z-1 backdrop-blur-md bg-white/55 ring-1 ring-black/5">
             <h3 className="text-xl md:text-xl lg:text-[1.8rem] text-center font-bold pb-4 drop-shadow-md drop-shadow-white/20">
               Where to Find Me
             </h3>

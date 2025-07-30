@@ -7,9 +7,9 @@ import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 
 const WorkEducation = () => {
   return (
-    <div id="Work & Education" className="md:w-full w-[95%] mx-auto min-h-[50vh]">
+    <div id="Work & Education" className="md:w-full w-[95%] mx-auto min-h-[50vh] md:px-0 px-1">
       <motion.section
-        className="-mt-7 mb-20"
+        className="md:-mt-7 md:mb-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5, ease: easeIn }}>
