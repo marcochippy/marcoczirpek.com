@@ -2,7 +2,7 @@ import { WorkEducationCardProps } from '@/types/WorkEducation';
 
 const WorkEducationCard = ({ item }: WorkEducationCardProps) => {
   return (
-    <div className="md:p-8 p-4 pt-1 h-auto min-h-[300px] bg-stone-100 z-10 border border-black/10 border-t-0 rounded-b-xl relative">
+    <div className="md:p-8 md:pt-0 p-4 pt-1 h-auto min-h-[300px] bg-stone-100 z-10 border border-black/10 border-t-0 rounded-b-xl relative">
       <p className="text-gray-600 text-base md:text-xl -mt-1 mb-4 ">{item.description}</p>
       <div className="grid md:grid-flow-row md:auto-rows-max md:grid-cols-3 grid-cols-2 gap-5">
         {item.videos?.map((video, index) => (
