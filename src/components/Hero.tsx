@@ -24,10 +24,8 @@ const Hero = () => {
   disableAnimationsOnMobile();
 
   return (
-    <section
-      id="Marco Czirpek"
-      className="min-h-[90vh] md:w-full flex items-center justify-center relative md:ml-25 md:px-2 ">
-      <motion.section className="flex flex-col md:flex-row items-center justify-center h-full w-[90vw] md:w-full md:max-w-[90rem] relative">
+    <section id="Marco Czirpek" className="min-h-[90vh] md:w-full flex items-center justify-center relative  ">
+      <motion.section className="flex flex-col md:flex-row items-center justify-center h-full w-[90vw] md:w-full md:max-w-[90rem] md:ml-25 md:px-2 relative">
         <motion.div
           {...dragValues}
           initial={{ opacity: 0, y: 50, scale: 0.9 }}
