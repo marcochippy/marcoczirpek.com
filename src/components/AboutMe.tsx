@@ -13,7 +13,7 @@ const AboutMe = () => {
   return (
     <section
       id="About Me"
-      className="relative min-h-[60vh] md:max-w-[65rem] mx-auto mb-5 md:mb-25 flex flex-col md:flex-row items-center justify-center px-4 md:px-8 ">
+      className="relative min-h-[60vh] md:max-w-[65rem] mx-auto mb-5 md:mb-25 flex flex-col md:flex-row items-center justify-center px-4 md:px-8">
       <motion.div
         {...dragValues}
         className="relative w-full max-w-[45rem] md:px-8 md:py-7 px-4 py-3 rounded-xl backdrop-blur-md bg-black/3 ring-1 ring-black/10 hover:cursor-pointer ">
