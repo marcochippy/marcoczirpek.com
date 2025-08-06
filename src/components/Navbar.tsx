@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-3 left-1/2 transform -translate-x-1/2 z-50 hidden md:flex md:opacity-100 px-1 lg:px-0 md:w-[65rem] pointer-events-none">
-      <nav className="flex ml-auto mr-0 py-2 px-1 rounded-full transition-all duration-400 backdrop-blur-md bg-white/5 ring-1 ring-black/10 pointer-events-auto">
+      <nav className="flex ml-auto mr-0 py-2 px-1 rounded-full transition-all ease-in-out duration-400 backdrop-blur-md bg-white/5 ring-1 ring-black/10 pointer-events-auto">
         {menus.map((menu, i) => {
           if (menu === 'Marco Czirpek') {
             return null;
@@ -42,7 +42,7 @@ const Navbar = () => {
             <a
               key={i}
               href={`#${menu}`}
-              className={`mx-1 py-2 px-4 transition-all rounded-full duration-400 backdrop-blur-sm ring-1 ring-black/3 hover:font-bold hover:bg-green-300/70 hover:ring-black/10 ${
+              className={`mx-1 py-2 px-4 transition-all rounded-full ease-in-out duration-400 backdrop-blur-sm ring-1 ring-black/3 hover:font-bold hover:bg-green-300/70 hover:ring-black/10 ${
                 activeSection === menu ? 'bg-green-300/70 font-bold ring-black/10 ' : ''
               }`}>
               {menu}

@@ -20,7 +20,9 @@ const WorkEducation = () => {
               {workEducationItems.map(item => (
                 <AccordionItem
                   key={item.id}
-                  header={WorkEducationCardClosed(item)}
+                  header={({ state: { isEnter } }: { state: { isEnter: boolean } }) => (
+                    <WorkEducationCardClosed item={item} isOpen={isEnter} />
+                  )}
                   className="mb-3"
                   buttonProps={{
                     className: ({ isEnter }: { isEnter: boolean }) =>
