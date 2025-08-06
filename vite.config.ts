@@ -11,4 +11,11 @@ export default defineConfig({
       '@': path.resolve('./src'),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: '_worker.js',
+      },
+    },
+  },
 });
