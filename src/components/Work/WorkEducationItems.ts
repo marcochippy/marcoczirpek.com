@@ -12,7 +12,7 @@ import zeimg5 from '@/assets/ZE/ze-weava.webp';
 import zeimg6 from '@/assets/ZE/ze-wieis.webp';
 
 import hmkwlogo from '@/assets/HMKW/hmkw-logo.webp';
-import hmkwvideo from '@/assets/HMKW/Connect_Startup.mp4';
+import hmkwvideo from '@/assets/HMKW/Connect_Startup-grey.mp4';
 import hmkwopener from '@/assets/HMKW/Connect_Opener_Top.webp';
 import hmkwimg2 from '@/assets/HMKW/Connect_Mockup_09.webp';
 
@@ -77,8 +77,8 @@ export const workEducationItems = [
     description: `During my university years, I worked as a working student at BANKINGCLUB GmbH, a hub for professionals in the banking and finance sector. This role allowed me to engage in the production of the company's print magazine, BANKINGNEWS. My responsibilities also included various design tasks, from supporting conventions to engaging in photography, eventually expanding into video content production.`,
     logo: bclogo,
     images: [
-      { imgUrl: bcimg1, rowSpan: 1, colSpan: 1, alt: 'Work exhibit of BANKINGNEWS' },
-      { imgUrl: bcimg2, rowSpan: 1, colSpan: 1, alt: 'Work exhibit of BANKINGNEWS' },
+      { imgUrl: bcimg1, rowSpan: 2, colSpan: 1, alt: 'Work exhibit of BANKINGNEWS' },
+      { imgUrl: bcimg2, rowSpan: 2, colSpan: 2, alt: 'Work exhibit of BANKINGNEWS' },
     ],
   },
 ];
