@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     element: <ImprintGDPR />,
   },
   {
-    path: '*',
+    path: '404',
     element: <NotFound />,
   },
 ]);
