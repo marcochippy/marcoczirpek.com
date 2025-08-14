@@ -1,6 +1,6 @@
 import { getAssetFromKV } from '@cloudflare/kv-asset-handler';
 
-const destinationURL = 'https://marcoczirpek.com/404';
+const destinationURL = 'https://marcoczirpek.com/';
 const statusCode = 301;
 
 addEventListener('fetch', event => {
