@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from '../routes/Home';
 import MainLayout from '@/layouts/MainLayout';
 import ImprintGDPR from '@/routes/ImprintGDPR';
-// import NotFound from '@/routes/NotFound';
+import NotFound from '@/routes/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -19,10 +19,10 @@ const router = createBrowserRouter([
     path: 'imprint-gdpr',
     element: <ImprintGDPR />,
   },
-  // {
-  //   path: '*',
-  //   element: <NotFound />,
-  // },
+  {
+    path: '*',
+    element: <NotFound />,
+  },
 ]);
 
 const Router = () => {
