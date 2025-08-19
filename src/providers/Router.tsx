@@ -19,10 +19,10 @@ const router = createBrowserRouter([
     path: 'imprint-gdpr',
     element: <ImprintGDPR />,
   },
-  {
-    path: '*',
-    element: <NotFound />,
-  },
+  // {
+  //   path: '*',
+  //   element: <NotFound />,
+  // },
 ]);
 
 const Router = () => {
