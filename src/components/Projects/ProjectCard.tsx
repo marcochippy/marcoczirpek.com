@@ -14,12 +14,15 @@ const ProjectCard = (project: ProjectItem) => {
         </div>
       </div>
       <p className="text-gray-600 text-base md:text-xl mt-2 mb-3 ">{project.description}</p>
-      <button className="text-gray-700 text-lg ring-1 ring-black/3 bg-white rounded-xl transition-all duration-400 px-4 py-2 font-bold text-left mb-4 hover:cursor-pointer hover:bg-green-300/70 hover:ring-black/10">
+      <button
+        className={
+          'text-gray-700 text-lg ring-1 ring-black/3 bg-white rounded-xl transition-all duration-400 px-4 py-2 font-bold text-left mb-4 hover:cursor-pointer hover:bg-gray-200/70 hover:ring-black/10'
+        }>
         <a target="_blank" rel="noopener noreferrer" href={project.deployedLink}>
           {project.deployedText}
         </a>
       </button>
-      <div className="grid grid-flow-row auto-rows-max grid-cols-2 gap-5">
+      <div className={`grid grid-flow-row auto-rows-max grid-cols-${project.gridSpan} gap-5`}>
         {project.images?.map((image, index) => (
           <img
             key={index}

@@ -1,7 +1,6 @@
 import wbslogo from '@/assets/WBS/wbs_coding_school_logo.jpeg';
 import wbsimg1 from '@/assets/WBS/wbs-tracker-1.webp';
-import wbsvid2 from '@/assets/WBS/wbs-tracker-2.mp4';
-import wbsimg3 from '@/assets/WBS/wbs-tracker-2.webp';
+import pokemon1 from '@/assets/WBS/pokemon-mockup.webp';
 
 import zelogo from '@/assets/ZE/ze-feder.png';
 import zeimg1 from '@/assets/ZE/ze-rhoen-1.webp';
@@ -26,13 +25,13 @@ export const workEducationItems = [
     title: 'Full-Stack Web Development Bootcamp',
     institution: 'WBS Coding School',
     period: '03.2025 - 07.2025',
-    description: `I completed an intensive four-month bootcamp in modern full-stack web development. I gained hands-on experience in developing, deploying, and maintaining web applications using the latest technologies, such as JavaScript, React, and Node.js. For the final project, my team and I built a social workout tracker — an app designed to connect people with compatible workout routines and encourage them to exercise together. The app also features AI-generated workout plans tailored to each user’s goals and preferences.`,
+    description: `I completed an intensive four-month bootcamp in modern full-stack web development, where I gained hands-on experience building responsive, user-friendly interfaces using technologies such as JavaScript and React. I worked on developing dynamic frontends that interact seamlessly with backend services and APIs. On the backend, I worked with Node.js and Express to build RESTful APIs and server-side logic. I also gained practical experience with both SQL and NoSQL databases, including PostgreSQL and MongoDB, for storing and managing application data. My training covered key backend concepts such as authentication, data modeling, and deployment.`,
     logo: wbslogo,
     images: [
       { imgUrl: wbsimg1, rowSpan: 1, colSpan: 1, alt: 'Image from Web Development Bootcamp' },
-      { imgUrl: wbsimg3, rowSpan: 1, colSpan: 1, alt: 'Image from Web Development Bootcamp' },
+      { imgUrl: pokemon1, rowSpan: 1, colSpan: 2, alt: 'Image from Web Development Bootcamp' },
     ],
-    videos: [{ videoUrl: wbsvid2, rowSpan: 1, colSpan: 1, alt: 'Connect Video Loop' }],
+    // videos: [{}],
   },
   {
     id: 2,

@@ -6,7 +6,7 @@ const GalleryIcons = ({ projects, activeProject, setActiveProject }: GalleryIcon
     <div className="flex items-center">
       {projects.map((project: ProjectItem) => (
         <motion.button
-          className={`${project.bgColor} scale-95 opacity-60 drop-shadow-sm rounded-xl cursor-pointer`}
+          className={`${project.bgColor} scale-95 opacity-60 drop-shadow-sm mx-2 rounded-xl cursor-pointer`}
           animate={{
             scale: activeProject?.id === project.id ? 1.05 : 1,
             opacity: activeProject?.id === project.id ? 1 : 0.5,
@@ -14,7 +14,7 @@ const GalleryIcons = ({ projects, activeProject, setActiveProject }: GalleryIcon
           whileHover={{
             scale: activeProject?.id === project.id ? 1.05 : 1.025,
             opacity: 1,
-            filter: `drop-shadow(0 0px 10px rgb(0 0 0 / 0.3))`,
+            filter: `drop-shadow(0 0px 10px rgb(${project.highlight}))`,
           }}
           transition={{
             type: 'spring',

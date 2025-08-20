@@ -14,7 +14,7 @@ const ProjectGallery = () => {
       </h3>
 
       <div className="flex justify-center">
-        <div className="p-3 inline-flex rounded-xl transition-all duration-400 backdrop-blur-md bg-stone-100 ring-1 ring-black/10">
+        <div className="py-3 px-2 inline-flex rounded-xl transition-all duration-400 backdrop-blur-md bg-stone-100 ring-1 ring-black/10">
           <GalleryIcons projects={ProjectItems} activeProject={activeProject} setActiveProject={setActiveProject} />
         </div>
       </div>

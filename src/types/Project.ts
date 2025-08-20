@@ -26,6 +26,7 @@ export interface ProjectItem {
   deployedLink?: string;
   deployedText?: string;
   tools: string;
+  gridSpan: number;
   images?: Image[];
   videos?: Video[];
 }
