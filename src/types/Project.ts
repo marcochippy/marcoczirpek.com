@@ -27,6 +27,7 @@ export interface ProjectItem {
   deployedText?: string;
   tools: string;
   gridSpan: number;
+  rowSpan: number;
   images?: Image[];
   videos?: Video[];
 }

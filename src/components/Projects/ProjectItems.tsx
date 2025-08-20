@@ -22,6 +22,7 @@ export const ProjectItems = [
     deployedText: 'Check out the Game here',
     tools: 'React, Tailwindcss, Express, MongoDB',
     gridSpan: 2,
+    rowSpan: 1,
     images: [{ imgUrl: pokemon1, rowSpan: 2, colSpan: 1, alt: 'Pokemon Screenshot' }],
     videos: [{ videoUrl: pokemon2, rowSpan: 2, colSpan: 1, alt: 'Pokemon Video Loop' }],
   },
@@ -39,6 +40,7 @@ export const ProjectItems = [
     deployedText: 'Check out the Project here',
     tools: 'React, Tailwindcss, Express, MongoDB, AI Integration',
     gridSpan: 3,
+    rowSpan: 1,
     images: [
       { imgUrl: wbsimg1, rowSpan: 1, colSpan: 1, alt: 'Workout Tracker Image' },
       { imgUrl: wbsimg3, rowSpan: 1, colSpan: 1, alt: 'Workout Tracker Image' },

@@ -22,7 +22,24 @@ const ProjectCard = (project: ProjectItem) => {
           {project.deployedText}
         </a>
       </button>
-      <div className={`grid grid-flow-row auto-rows-max grid-cols-${project.gridSpan} gap-5`}>
+      <div
+        className={`grid grid-flow-row gap-5 ${
+          project.gridSpan === 1
+            ? 'grid-cols-1'
+            : project.gridSpan === 2
+            ? 'grid-cols-2'
+            : project.gridSpan === 3
+            ? 'grid-cols-3'
+            : 'grid-cols-1'
+        } ${
+          project.rowSpan === 1
+            ? 'grid-rows-1'
+            : project.rowSpan === 2
+            ? 'grid-rows-2'
+            : project.rowSpan === 3
+            ? 'grid-rows-3'
+            : 'grid-rows-1'
+        }`}>
         {project.images?.map((image, index) => (
           <img
             key={index}
