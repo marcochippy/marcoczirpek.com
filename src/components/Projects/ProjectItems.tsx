@@ -7,11 +7,35 @@ import wbsimg1 from '@/assets/WBS/wbs-tracker-1.webp';
 import wbsvid2 from '@/assets/WorkoutTracker/wbs-tracker-2.mp4';
 import wbsimg3 from '@/assets/WorkoutTracker/wbs-tracker-2.webp';
 
+import Wearhter from '@/assets/Wearther/PartlyCloudy.svg';
+import Wearhtermockup1 from '@/assets/Wearther/Wearther-iphone.webp';
+import Wearhtermockup2 from '@/assets/Wearther/Wearther-macbook.webp';
+
 export const ProjectItems = [
   {
     id: 1,
+    title: 'Wearther - Hourly weather forecasts with outfit recommendations',
+    description: `I built a weather web app using the MERN stack that gives hourly forecasts for the next 12 hours and clothing recommendations based on the weather in the Cologne area. It has been a project full of “firsts” like working with a VPS, GitHub Actions, Cloudflare Workers and more. I plan to add more features over time.`,
+    icon: Wearhter,
+    bgColor: 'bg-[#87CEEB]',
+    extraStyling: '',
+    highlight: '135 206 235 / 0.8',
+    githublink: 'https://github.com/marcochippy/Wearther',
+    githubText: 'GitHub Repo here',
+    deployedLink: 'https://wearther.marcoczirpek.com/',
+    deployedText: 'Check out the Project here',
+    tools: 'MERN Stack, AI Integration, VPS, GitHub Actions, Cloudflare Workers',
+    gridSpan: 3,
+    rowSpan: 1,
+    images: [
+      { imgUrl: Wearhtermockup1, rowSpan: 1, colSpan: 1, alt: 'Wearther Image' },
+      { imgUrl: Wearhtermockup2, rowSpan: 1, colSpan: 2, alt: 'Wearther Image' },
+    ],
+  },
+  {
+    id: 3,
     title: 'PokeBrawl - Pokémon Game',
-    description: `As part of the bootcamp, we developed a small Pokémon-inspired browser game, featuring both a frontend and backend. Players choose a Pokémon of their liking and battle through rounds against randomly generated opponents. Once defeated, they can enter their name into a global leaderboard to see how far they made it compared to others. The design and gameplay were inspired by the style of the original Pokémon games. Check out the game for yourself. I'm currently reworking the project using the Next.js framework.`,
+    description: `As part of the bootcamp, we developed a small Pokémon-inspired browser game, featuring both a frontend and backend. Players choose a Pokémon of their liking and battle through rounds against randomly generated opponents. Once defeated, they can enter their name into a global leaderboard to see how far they made it compared to others. The design and gameplay were inspired by the style of the original Pokémon games. Check out the game for yourself.`,
     icon: pokeball,
     bgColor: 'bg-white',
     extraStyling: 'pixelated',

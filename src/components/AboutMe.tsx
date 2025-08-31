@@ -30,7 +30,7 @@ const AboutMe = () => {
         </p>
         <p className="md:text-xl text-base pb-1 pr-5">
           Since completing the bootcamp, I have continued to develop my skills and build on the tools I acquired. I am
-          currently working on personal projects and expanding my tech stack with tools such as TypeScript and Next.js.
+          currently working on personal projects and expanding my tech stack.
         </p>
       </motion.div>
       <motion.div
