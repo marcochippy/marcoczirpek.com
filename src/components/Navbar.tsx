@@ -9,8 +9,8 @@ const Navbar = () => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '-20% 0px -30% 0px',
-      threshold: [0, 0.5],
+      rootMargin: '-10% 0px -50% 0px',
+      threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5],
     };
 
     let timeoutId: number;
