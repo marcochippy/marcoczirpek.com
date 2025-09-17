@@ -9,18 +9,22 @@ const Navbar = () => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '-10% 0px -50% 0px',
-      threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5],
+      rootMargin: '-20% 0px -30% 0px',
+      threshold: [0, 0.5],
     };
 
+    let timeoutId: number;
     const observer = new IntersectionObserver(entries => {
-      const visibleEntries = entries
-        .filter(entry => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        const visibleEntries = entries
+          .filter(entry => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
-      if (visibleEntries.length > 0) {
-        setActiveSection(visibleEntries[0].target.id);
-      }
+        if (visibleEntries.length > 0) {
+          setActiveSection(visibleEntries[0].target.id);
+        }
+      }, 16);
     }, options);
 
     menus.forEach(menu => {
@@ -28,12 +32,17 @@ const Navbar = () => {
       if (element) observer.observe(element);
     });
 
-    return () => observer.disconnect();
+    return () => {
+      clearTimeout(timeoutId);
+      observer.disconnect();
+    };
   }, [menus]);
 
   return (
     <header className="fixed top-3 left-1/2 transform -translate-x-1/2 z-50 hidden md:flex md:opacity-100 px-1 lg:px-0 md:w-[65rem] pointer-events-none">
-      <nav className="flex ml-auto mr-0 py-2 px-1 rounded-full transition-all ease-in-out duration-400 backdrop-blur-md bg-white/5 ring-1 ring-black/10 pointer-events-auto">
+      <nav
+        className="flex ml-auto mr-0 py-2 px-1 rounded-full backdrop-blur-md bg-white/5 ring-1 ring-black/10 pointer-events-auto will-change-transform"
+        style={{ transform: 'translateZ(0)' }}>
         {menus.map((menu, i) => {
           if (menu === 'Marco Czirpek') {
             return null;
@@ -42,9 +51,10 @@ const Navbar = () => {
             <a
               key={i}
               href={`#${menu}`}
-              className={`mx-1 py-2 px-4 transition-all rounded-full ease-in-out duration-400 backdrop-blur-sm ring-1 ring-black/3 hover:font-bold hover:bg-green-300/70 hover:ring-black/10 ${
+              className={`mx-1 py-2 px-4 rounded-full backdrop-blur-sm ring-1 ring-black/3 will-change-transform transition-all duration-200 ease-in-out hover:font-bold hover:bg-green-300/70 hover:ring-black/10 ${
                 activeSection === menu ? 'bg-green-300/70 font-bold ring-black/10 ' : ''
-              }`}>
+              }`}
+              style={{ transform: 'translateZ(0)' }}>
               {menu}
             </a>
           );

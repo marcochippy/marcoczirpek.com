@@ -21,6 +21,8 @@ const Hero = () => {
     }
   };
 
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
   disableAnimationsOnMobile();
 
   return (
@@ -34,28 +36,31 @@ const Hero = () => {
             y: 0,
             scale: 1,
           }}
-          className="w-[75%] md:w-[450px] justify-center md:justify-start hover:cursor-pointer -mt-10 md:mt-0 ">
+          className="w-[75%] md:w-[450px] justify-center md:justify-start hover:cursor-pointer -mt-10 md:mt-0 transform-gpu will-change-[transform,filter]">
           <motion.div animate={floatingAnimation} className="relative w-full">
-            <motion.img
-              initial={{ opacity: 0 }}
-              animate={{
-                opacity: 1,
-                scale: 1.15,
-              }}
-              transition={{
-                opacity: { delay: 0.3, duration: 3 },
-                scale: {
-                  duration: 5,
-                  repeat: Infinity,
-                  repeatType: 'reverse',
-                  ease: 'easeInOut',
-                },
-              }}
-              className=" w-full md:max-w-[450px] z-[-2] hidden md:flex absolute rounded-full blur-3xl md:ml-[10px] "
-              {...imgMarco}
-            />
+            {isSafari ? null : (
+              <motion.img
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  scale: 1.15,
+                }}
+                transition={{
+                  opacity: { delay: 0.3, duration: 3 },
+                  scale: {
+                    duration: 5,
+                    repeat: Infinity,
+                    repeatType: 'reverse',
+                    ease: 'easeInOut',
+                  },
+                }}
+                className=" w-full md:max-w-[450px] z-[1] hidden md:flex absolute rounded-full blur-3xl md:ml-[10px] "
+                {...imgMarco}
+              />
+            )}
+
             <img
-              className="relative md:mt-[-100px] md:ml-[10px] w-full max-w-[450px] z-[1] rounded-full"
+              className="relative md:mt-[-100px] md:ml-[10px] w-full max-w-[450px] z-[3] rounded-full"
               fetchPriority="high"
               {...imgMarco}
             />
