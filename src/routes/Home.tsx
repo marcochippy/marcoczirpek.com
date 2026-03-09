@@ -1,17 +1,9 @@
-import Hero from '@/components/Hero';
-import WorkEducation from '@/components/WorkEducation';
-import ProjectGallery from '@/components/ProjectGallery';
-import AboutMe from '@/components/AboutMe';
-import Footer from '@/components/Footer';
+import End from '@/components/End';
 
 const Home = () => {
   return (
     <div>
-      <Hero />
-      <WorkEducation />
-      <ProjectGallery />
-      <AboutMe />
-      <Footer />
+      <End />
     </div>
   );
 };
