@@ -6,8 +6,8 @@ const CELL_W = 9; // CSS-px pro Zeichen (Desktop; auf kleinen Screens automatisc
 const CELL_H = 16;
 const FPS = 24;
 const STEPS = 11; // Simulationsschritte pro Frame = Geschwindigkeit (8 ≈ 1×, 11 ≈ 1,4×)
-const WARMUP_SEC = 5; // So viele Sekunden ist die Animation beim Start schon "weiter"
-const SEED_TEXT = '404'; // Startform, "" = nur Zufallströpfchen
+const WARMUP_SEC = 10; // So viele Sekunden ist die Animation beim Start schon "weiter"
+const SEED_TEXT = '123'; // Startform, "" = nur Zufallströpfchen
 const DAY_SEED = true; // true: pro Tag ein Muster, false: pro Besuch
 const GLITCH_MS = 140;
 const GLITCH_GAP: [number, number] = [2500, 7500];

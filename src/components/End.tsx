@@ -75,11 +75,12 @@ const End = () => {
 
         <div className="relative z-10 text-sm md:text-base font-light ml-5 text-[#e8e8e8]/60 text-left leading-relaxed">
           <p className="relative">
-            <span className={`transition-opacity duration-300 ${hovered ? 'opacity-0' : ''}`}>
-              Nothing here anymore.
-            </span>
-            <span className={`absolute inset-0 transition-opacity duration-300 ${hovered ? '' : 'opacity-0'}`}>
-              Something in the works…
+            Nothing here anymore.
+            <span
+              className={`inline-block whitespace-pre transition-opacity duration-300 ${
+                hovered ? 'opacity-100' : 'opacity-0'
+              }`}>
+              {'.. for now'}
             </span>
           </p>
           <p>Domain reserved for personal use.</p>
